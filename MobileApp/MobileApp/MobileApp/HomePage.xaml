@@ -13,8 +13,13 @@
                HorizontalOptions="CenterAndExpand" />
     </StackLayout>
     <StackLayout>
-        <Button x:Name="searchButton"
+        <Button x:Name="SearchButton"
                 HorizontalOptions="End"
-                Clicked=""
+                Clicked="SearchButton_Clicked"/>
+    </StackLayout>
+    <StackLayout>
+        <SearchBar x:Name="SearchBar"
+                   HorizontalOptions="CenterAndExpand"
+                   TextChanged="SearchBar_TextChanged"/>
     </StackLayout>
 </ContentPage>

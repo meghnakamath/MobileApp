@@ -16,5 +16,16 @@ namespace MobileApp
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void SearchButton_Clicked(object sender, EventArgs e)
+        {
+            SearchButton.IsVisible = false;
+            SearchBar.IsVisible = true;
+        }
+
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+    }
 }
